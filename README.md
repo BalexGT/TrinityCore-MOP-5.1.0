@@ -12,6 +12,10 @@ https://github.com/DarkBrain2580/TrinityCore-MOP-5.1.0/blob/master/TO%20DO
 Maps,VMaps, MMaps Comming Soon 
 
 DBC Download: https://mega.co.nz/#!oVIFlQSJ!Hbek4U07QHC3BIwz6E4XFDKEGZ_IXhywoBp6FwBsCIo
+Maps Download: https://mega.co.nz/#!VAZGTYpC!7hPwgoS9ZScxs5keVWuZIriWhnXLao1u2JbUBb-H7xs
+VMaps Download: https://mega.co.nz/#!xcJSWJKb!H0cA3Tw1iQE72GW3RS8w0xIVsujfEBDsqL3WXA4nk0M
+
+World Database Download: https://mega.co.nz/#!AYZhgQDA!rVVw8v-fj4Pk_9YElCyOT622qtiaV98ifwid-7v0m_s
 
 
 
