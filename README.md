@@ -6,12 +6,8 @@ TrinityCore 4.3.4 changed to Mists of Pandaria 5.1.0a
 last merge 3/02/2013 with TrinityCore 4.3.4.
 commit - 66dfcd2b43286829a200a52aac83d57aac88f140
 
-People are selling this source for a lot of money, i'm giving it out for free.
 
-
-mmaps, vmaps, dbc & SQL world database
-
-https://mega.co.nz/#!BoNEUBgI!Qp8psxnb9rFz24VpSSjOI0x8WpkaIgfvCoyyuyAzbLY
+Maps,VMaps, MMaps and DBC Comming Soon 
 
 
 
