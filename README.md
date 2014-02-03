@@ -19,6 +19,7 @@ VMaps Download: https://mega.co.nz/#!xcJSWJKb!H0cA3Tw1iQE72GW3RS8w0xIVsujfEBDsqL
 
 World Database Download: https://mega.co.nz/#!AYZhgQDA!rVVw8v-fj4Pk_9YElCyOT622qtiaV98ifwid-7v0m_s
 
+Client Download: http://www.gods-of-nation.eu
 
 
 https://github.com/DarkBrain2580/TrinityCore-MOP-5.1.0
