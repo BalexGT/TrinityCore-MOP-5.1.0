@@ -28,11 +28,6 @@ CREATE TABLE `account_data` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of account_data
--- ----------------------------
-INSERT INTO `account_data` VALUES ('1', '0', '1389862538', 0x53455420666C61676765645475746F7269616C732022760123232423234523232823233023233823234B23235B23232923233C23233923234923234423234A23235623236023233F23234023234623233A23233D220D0A5345542063616D65726144697374616E63654D6178466163746F72202231220D0A5345542074616C656E744672616D6553686F776E202231220D0A);
-
--- ----------------------------
 -- Table structure for `account_instance_times`
 -- ----------------------------
 DROP TABLE IF EXISTS `account_instance_times`;
@@ -65,11 +60,6 @@ CREATE TABLE `account_tutorial` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of account_tutorial
--- ----------------------------
-INSERT INTO `account_tutorial` VALUES ('1', '40898609', '277086435', '0', '0', '0', '0', '0', '0');
-
--- ----------------------------
 -- Table structure for `addons`
 -- ----------------------------
 DROP TABLE IF EXISTS `addons`;
@@ -78,50 +68,6 @@ CREATE TABLE `addons` (
   `crc` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Addons';
-
--- ----------------------------
--- Records of addons
--- ----------------------------
-INSERT INTO `addons` VALUES ('Blizzard_AchievementUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_ArchaeologyUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_ArenaUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_AuctionUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_BarbershopUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_BattlefieldMinimap', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_BindingUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_BlackMarketUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_Calendar', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_ChallengesUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_ClientSavedVariables', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_CombatLog', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_CombatText', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_CompactRaidFrames', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_CUFProfiles', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_DebugTools', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_EncounterJournal', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_GlyphUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_GMChatUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_GMSurveyUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_GuildBankUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_GuildControlUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_GuildUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_InspectUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_ItemAlterationUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_ItemSocketingUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_ItemUpgradeUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_LookingForGuildUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_MacroUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_MovePad', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_PetBattleUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_PetJournal', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_RaidUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_ReforgingUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_TalentUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_TimeManager', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_TokenUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_TradeSkillUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_TrainerUI', '1276933997');
-INSERT INTO `addons` VALUES ('Blizzard_VoidStorageUI', '1276933997');
 
 -- ----------------------------
 -- Table structure for `arena_team`
@@ -204,20 +150,6 @@ CREATE TABLE `blackmarket` (
   `bidder` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Player guid (highest bid)',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of blackmarket
--- ----------------------------
-INSERT INTO `blackmarket` VALUES ('1', '46', '1389860920', '100000000', '0');
-INSERT INTO `blackmarket` VALUES ('2', '88', '1389860927', '150000000', '0');
-INSERT INTO `blackmarket` VALUES ('3', '38', '1389860920', '100000000', '0');
-INSERT INTO `blackmarket` VALUES ('4', '36', '1389860990', '100000000', '0');
-INSERT INTO `blackmarket` VALUES ('5', '256', '1389860925', '150000000', '0');
-INSERT INTO `blackmarket` VALUES ('6', '21', '1389860914', '100000000', '0');
-INSERT INTO `blackmarket` VALUES ('7', '86', '1389860927', '150000000', '0');
-INSERT INTO `blackmarket` VALUES ('8', '22', '1389860991', '100000000', '0');
-INSERT INTO `blackmarket` VALUES ('9', '132', '1389860943', '125000000', '0');
-INSERT INTO `blackmarket` VALUES ('10', '20', '1389860971', '100000000', '0');
 
 -- ----------------------------
 -- Table structure for `bugreport`
@@ -372,11 +304,6 @@ CREATE TABLE `characters` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Player System';
 
 -- ----------------------------
--- Records of characters
--- ----------------------------
-INSERT INTO `characters` VALUES ('1', '1', 'Dark', '0', '25', '1', '0', '36', '0', '961', '201330700', '16777216', '32', '-8726.6', '513.997', '96.6674', '0', '0', '49', '5.73925', '0 0 0 0 0 0 0 0 0 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0', '1', '2389', '361', '1389863355', '1', '35.4797', '0', '0', '72 0 ', '0', '0', '0', '0', '0', '0', '0', '0', '1519', '0', '', '0', '0', '0', '0', '4294967295', '0', '1895', '0', '0', '0', '0', '0', '0', '1', '0', '0 0 0 1073741824 0 0 0 0 0 0 0 0 0 0 0 0 0 16 0 0 0 65536 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 536870912 2 0 0 0 0 128 0 0 0 0 0 0 1073741824 0 0 0 0 0 0 55053314 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0 0 0 0 0 0 0 0 73226 0 73219 0 73229 0 0 0 57397 0 73222 0 0 0 0 0 0 0 0 0 73223 0 73210 0 0 0 0 0 0 0 73241 0 0 0 0 0 0 0 ', '0 0 0 0 0 0 0 0 ', '0', '0', '0', null, null, null);
-
--- ----------------------------
 -- Table structure for `characters_back`
 -- ----------------------------
 DROP TABLE IF EXISTS `characters_back`;
@@ -470,12 +397,6 @@ CREATE TABLE `character_account_data` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of character_account_data
--- ----------------------------
-INSERT INTO `character_account_data` VALUES ('1', '1', '1389863341', 0x534554206175746F5175657374506F7055707320227601232324220D0A53455420747261636B656451756573747320227601220D0A53455420747261636B6564416368696576656D656E747320227601220D0A5345542063616D657261536176656444697374616E6365202231352E303030303030220D0A5345542063616D65726153617665645069746368202231332E373939393838220D0A5345542074616C656E74506F696E74735370656E74202231220D0A534554206D696E696D6170547261636B6564496E666F76322022323239333834220D0A534554206D696E696D617053686170657368696674547261636B696E6720227601220D0A5345542072657075746174696F6E73436F6C6C617073656420227601232324220D0A5345542061637469766543554650726F66696C6520225072696DC3A472220D0A);
-INSERT INTO `character_account_data` VALUES ('1', '7', '1389862540', 0x56455253494F4E20350A0A414444454456455253494F4E2031390A0A4348414E4E454C530A454E440A0A5A4F4E454348414E4E454C532033353635313538370A0A434F4C4F52530A0A53595354454D20323535203235352030204E0A534159203235352032353520323535204E0A5041525459203137302031373020323535204E0A5241494420323535203132372030204E0A4755494C4420363420323535203634204E0A4F46464943455220363420313932203634204E0A59454C4C20323535203634203634204E0A57484953504552203235352031323820323535204E0A574849535045525F464F524549474E203235352031323820323535204E0A574849535045525F494E464F524D203235352031323820323535204E0A454D4F54452032353520313238203634204E0A544558545F454D4F54452032353520313238203634204E0A4D4F4E535445525F534159203235352032353520313539204E0A4D4F4E535445525F5041525459203137302031373020323535204E0A4D4F4E535445525F59454C4C20323535203634203634204E0A4D4F4E535445525F57484953504552203235352031383120323335204E0A4D4F4E535445525F454D4F54452032353520313238203634204E0A4348414E4E454C203235352031393220313932204E0A4348414E4E454C5F4A4F494E203139322031323820313238204E0A4348414E4E454C5F4C45415645203139322031323820313238204E0A4348414E4E454C5F4C495354203139322031323820313238204E0A4348414E4E454C5F4E4F54494345203139322031393220313932204E0A4348414E4E454C5F4E4F544943455F55534552203139322031393220313932204E0A41464B203235352031323820323535204E0A444E44203235352031323820323535204E0A49474E4F5245442032353520302030204E0A534B494C4C20383520383520323535204E0A4C4F4F542030203137302030204E0A4D4F4E455920323535203235352030204E0A4F50454E494E47203132382031323820323535204E0A5452414445534B494C4C53203235352032353520323535204E0A5045545F494E464F203132382031323820323535204E0A434F4D4241545F4D4953435F494E464F203132382031323820323535204E0A434F4D4241545F58505F4741494E203131312031313120323535204E0A434F4D4241545F484F4E4F525F4741494E2032323420323032203130204E0A434F4D4241545F46414354494F4E5F4348414E4745203132382031323820323535204E0A42475F53595354454D5F4E45555452414C2032353520313230203130204E0A42475F53595354454D5F414C4C49414E434520302031373420323339204E0A42475F53595354454D5F484F5244452032353520302030204E0A524149445F4C4541444552203235352037322039204E0A524149445F5741524E494E47203235352037322030204E0A524149445F424F53535F454D4F544520323535203232312030204E0A524149445F424F53535F5748495350455220323535203232312030204E0A46494C54455245442032353520302030204E0A524553545249435445442032353520302030204E0A424154544C454E4554203235352032353520323535204E0A414348494556454D454E5420323535203235352030204E0A4755494C445F414348494556454D454E5420363420323535203634204E0A4152454E415F504F494E5453203235352032353520323535204E0A50415254595F4C4541444552203131382032303020323535204E0A54415247455449434F4E5320323535203235352030204E0A424E5F5748495350455220302032353520323436204E0A424E5F574849535045525F494E464F524D20302032353520323436204E0A424E5F434F4E564552534154494F4E20302031373720323430204E0A424E5F434F4E564552534154494F4E5F4E4F5449434520302031373720323430204E0A424E5F434F4E564552534154494F4E5F4C49535420302031373720323430204E0A424E5F494E4C494E455F544F4153545F414C455254203133302031393720323535204E0A424E5F494E4C494E455F544F4153545F42524F414443415354203133302031393720323535204E0A424E5F494E4C494E455F544F4153545F42524F4144434153545F494E464F524D203133302031393720323535204E0A424E5F494E4C494E455F544F4153545F434F4E564552534154494F4E203133302031393720323535204E0A424E5F574849535045525F504C415945525F4F46464C494E4520323535203235352030204E0A434F4D4241545F4755494C445F58505F4741494E203131312031313120323535204E0A43555252454E43592030203137302030204E0A51554553545F424F53535F454D4F54452032353520313238203634204E0A5045545F424154544C455F434F4D4241545F4C4F47203233312032323220313731204E0A5045545F424154544C455F494E464F2032323520323232203933204E0A494E5354414E43455F4348415420323535203132372030204E0A494E5354414E43455F434841545F4C4541444552203235352037322039204E0A4348414E4E454C31203235352031393220313932204E0A4348414E4E454C32203235352031393220313932204E0A4348414E4E454C33203235352031393220313932204E0A4348414E4E454C34203235352031393220313932204E0A4348414E4E454C35203235352031393220313932204E0A4348414E4E454C36203235352031393220313932204E0A4348414E4E454C37203235352031393220313932204E0A4348414E4E454C38203235352031393220313932204E0A4348414E4E454C39203235352031393220313932204E0A4348414E4E454C3130203235352031393220313932204E0A454E440A0A57494E444F5720310A4E414D4520416C6C67656D65696E0A53495A4520300A434F4C4F522030203020302034300A4C4F434B454420310A554E494E54455241435441424C4520300A444F434B454420310A53484F574E20310A4D455353414745530A53595354454D0A53595354454D5F4E4F4D454E550A5341590A454D4F54450A59454C4C0A574849535045520A50415254590A50415254595F4C45414445520A524149440A524149445F4C45414445520A524149445F5741524E494E470A4755494C440A4F4646494345520A4D4F4E535445525F5341590A4D4F4E535445525F59454C4C0A4D4F4E535445525F454D4F54450A4D4F4E535445525F574849535045520A4D4F4E535445525F424F53535F454D4F54450A4D4F4E535445525F424F53535F574849535045520A4552524F52530A41464B0A444E440A49474E4F5245440A42475F484F5244450A42475F414C4C49414E43450A42475F4E45555452414C0A434F4D4241545F46414354494F4E5F4348414E47450A534B494C4C0A4C4F4F540A4D4F4E45590A4348414E4E454C0A414348494556454D454E540A4755494C445F414348494556454D454E540A424E5F574849535045520A424E5F574849535045525F494E464F524D0A424E5F434F4E564552534154494F4E0A424E5F494E4C494E455F544F4153545F414C4552540A43555252454E43590A424E5F574849535045525F504C415945525F4F46464C494E450A5045545F424154544C455F494E464F0A494E5354414E43455F434841540A494E5354414E43455F434841545F4C45414445520A454E440A0A4348414E4E454C530A454E440A0A5A4F4E454348414E4E454C5320323039373135350A0A454E440A0A57494E444F5720320A4E414D45204B616D70666C6F670A53495A4520300A434F4C4F522030203020302034300A4C4F434B454420310A554E494E54455241435441424C4520300A444F434B454420320A53484F574E20300A4D455353414745530A4F50454E494E470A5452414445534B494C4C530A5045545F494E464F0A434F4D4241545F58505F4741494E0A434F4D4241545F484F4E4F525F4741494E0A434F4D4241545F4D4953435F494E464F0A434F4D4241545F4755494C445F58505F4741494E0A454E440A0A4348414E4E454C530A454E440A0A5A4F4E454348414E4E454C5320300A0A454E440A0A57494E444F5720330A53495A4520300A434F4C4F522030203020302034300A4C4F434B454420310A554E494E54455241435441424C4520300A444F434B454420300A53484F574E20300A4D455353414745530A454E440A0A4348414E4E454C530A454E440A0A5A4F4E454348414E4E454C5320300A0A454E440A0A57494E444F5720340A53495A4520300A434F4C4F522030203020302034300A4C4F434B454420310A554E494E54455241435441424C4520300A444F434B454420300A53484F574E20300A4D455353414745530A454E440A0A4348414E4E454C530A454E440A0A5A4F4E454348414E4E454C5320300A0A454E440A0A57494E444F5720350A53495A4520300A434F4C4F522030203020302034300A4C4F434B454420310A554E494E54455241435441424C4520300A444F434B454420300A53484F574E20300A4D455353414745530A454E440A0A4348414E4E454C530A454E440A0A5A4F4E454348414E4E454C5320300A0A454E440A0A57494E444F5720360A53495A4520300A434F4C4F522030203020302034300A4C4F434B454420310A554E494E54455241435441424C4520300A444F434B454420300A53484F574E20300A4D455353414745530A454E440A0A4348414E4E454C530A454E440A0A5A4F4E454348414E4E454C5320300A0A454E440A0A57494E444F5720370A53495A4520300A434F4C4F522030203020302034300A4C4F434B454420310A554E494E54455241435441424C4520300A444F434B454420300A53484F574E20300A4D455353414745530A454E440A0A4348414E4E454C530A454E440A0A5A4F4E454348414E4E454C5320300A0A454E440A0A57494E444F5720380A53495A4520300A434F4C4F522030203020302034300A4C4F434B454420310A554E494E54455241435441424C4520300A444F434B454420300A53484F574E20300A4D455353414745530A454E440A0A4348414E4E454C530A454E440A0A5A4F4E454348414E4E454C5320300A0A454E440A0A57494E444F5720390A53495A4520300A434F4C4F522030203020302034300A4C4F434B454420310A554E494E54455241435441424C4520300A444F434B454420300A53484F574E20300A4D455353414745530A454E440A0A4348414E4E454C530A454E440A0A5A4F4E454348414E4E454C5320300A0A454E440A0A57494E444F572031300A53495A4520300A434F4C4F522030203020302034300A4C4F434B454420310A554E494E54455241435441424C4520300A444F434B454420300A53484F574E20300A4D455353414745530A454E440A0A4348414E4E454C530A454E440A0A5A4F4E454348414E4E454C5320300A0A454E440A0A);
-
--- ----------------------------
 -- Table structure for `character_achievement`
 -- ----------------------------
 DROP TABLE IF EXISTS `character_achievement`;
@@ -485,13 +406,6 @@ CREATE TABLE `character_achievement` (
   `date` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`achievement`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of character_achievement
--- ----------------------------
-INSERT INTO `character_achievement` VALUES ('1', '6', '1389862976');
-INSERT INTO `character_achievement` VALUES ('1', '7', '1389862976');
-INSERT INTO `character_achievement` VALUES ('1', '8', '1389862976');
 
 -- ----------------------------
 -- Table structure for `character_achievement_progress`
@@ -506,61 +420,6 @@ CREATE TABLE `character_achievement_progress` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of character_achievement_progress
--- ----------------------------
-INSERT INTO `character_achievement_progress` VALUES ('1', '34', '36', '1389862976');
-INSERT INTO `character_achievement_progress` VALUES ('1', '35', '36', '1389862976');
-INSERT INTO `character_achievement_progress` VALUES ('1', '36', '36', '1389862976');
-INSERT INTO `character_achievement_progress` VALUES ('1', '37', '36', '1389862976');
-INSERT INTO `character_achievement_progress` VALUES ('1', '167', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '230', '19', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '641', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '651', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '652', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '653', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '654', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '655', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '656', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '657', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '753', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '754', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '755', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '756', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '834', '1', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '1147', '1', '1389862752');
-INSERT INTO `character_achievement_progress` VALUES ('1', '2020', '200', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '2030', '275', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '2031', '256', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '2032', '256', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '2033', '256', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '2034', '256', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '3355', '961', '1389862594');
-INSERT INTO `character_achievement_progress` VALUES ('1', '3513', '961', '1389862594');
-INSERT INTO `character_achievement_progress` VALUES ('1', '3631', '19', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '4092', '961', '1389862594');
-INSERT INTO `character_achievement_progress` VALUES ('1', '4224', '961', '1389862594');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5212', '36', '1389862976');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5220', '36', '1389862976');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5301', '9', '1389863341');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5328', '256', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5329', '256', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5330', '256', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5331', '275', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5332', '256', '1389862787');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5371', '33', '1389862105');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5372', '801', '1389862490');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5373', '88', '1389862488');
-INSERT INTO `character_achievement_progress` VALUES ('1', '5529', '24', '1389862492');
-INSERT INTO `character_achievement_progress` VALUES ('1', '8819', '500', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '8820', '500', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '8821', '500', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '8822', '500', '1389860866');
-INSERT INTO `character_achievement_progress` VALUES ('1', '9598', '36', '1389862976');
-INSERT INTO `character_achievement_progress` VALUES ('1', '14174', '36', '1389862976');
-INSERT INTO `character_achievement_progress` VALUES ('1', '14182', '36', '1389862976');
-INSERT INTO `character_achievement_progress` VALUES ('1', '16826', '256', '1389862787');
-
--- ----------------------------
 -- Table structure for `character_action`
 -- ----------------------------
 DROP TABLE IF EXISTS `character_action`;
@@ -572,22 +431,6 @@ CREATE TABLE `character_action` (
   `type` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`spec`,`button`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of character_action
--- ----------------------------
-INSERT INTO `character_action` VALUES ('1', '0', '0', '6603', '0');
-INSERT INTO `character_action` VALUES ('1', '0', '1', '78', '0');
-INSERT INTO `character_action` VALUES ('1', '0', '2', '100', '0');
-INSERT INTO `character_action` VALUES ('1', '0', '3', '34428', '0');
-INSERT INTO `character_action` VALUES ('1', '0', '4', '5308', '0');
-INSERT INTO `character_action` VALUES ('1', '0', '5', '355', '0');
-INSERT INTO `character_action` VALUES ('1', '0', '6', '7386', '0');
-INSERT INTO `character_action` VALUES ('1', '0', '7', '6343', '0');
-INSERT INTO `character_action` VALUES ('1', '0', '8', '57755', '0');
-INSERT INTO `character_action` VALUES ('1', '0', '9', '107079', '0');
-INSERT INTO `character_action` VALUES ('1', '0', '10', '6552', '0');
-INSERT INTO `character_action` VALUES ('1', '0', '11', '77273', '128');
 
 -- ----------------------------
 -- Table structure for `character_arena_stats`
@@ -623,11 +466,6 @@ CREATE TABLE `character_aura` (
   `remaincharges` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`caster_guid`,`item_guid`,`spell`,`effect_mask`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Player System';
-
--- ----------------------------
--- Records of character_aura
--- ----------------------------
-INSERT INTO `character_aura` VALUES ('1', '1', '0', '2457', '1', '1', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '-1', '-1', '0');
 
 -- ----------------------------
 -- Table structure for `character_banned`
@@ -667,11 +505,6 @@ CREATE TABLE `character_battleground_data` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Player System';
 
 -- ----------------------------
--- Records of character_battleground_data
--- ----------------------------
-INSERT INTO `character_battleground_data` VALUES ('1', '0', '0', '0', '0', '0', '0', '65535', '0', '0', '0');
-
--- ----------------------------
 -- Table structure for `character_battleground_random`
 -- ----------------------------
 DROP TABLE IF EXISTS `character_battleground_random`;
@@ -708,11 +541,6 @@ CREATE TABLE `character_cuf_profiles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of character_cuf_profiles
--- ----------------------------
-INSERT INTO `character_cuf_profiles` VALUES ('1', '0', 'Primär', '36', '72', '0', '0', '68493381', '0', '0', '0', '0', '0', '0');
-
--- ----------------------------
 -- Table structure for `character_currency`
 -- ----------------------------
 DROP TABLE IF EXISTS `character_currency`;
@@ -723,13 +551,6 @@ CREATE TABLE `character_currency` (
   `week_count` int(10) unsigned NOT NULL,
   PRIMARY KEY (`guid`,`currency`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of character_currency
--- ----------------------------
-INSERT INTO `character_currency` VALUES ('1', '390', '0', '0');
-INSERT INTO `character_currency` VALUES ('1', '392', '0', '0');
-INSERT INTO `character_currency` VALUES ('1', '395', '0', '0');
 
 -- ----------------------------
 -- Table structure for `character_declinedname`
@@ -822,11 +643,6 @@ CREATE TABLE `character_glyphs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of character_glyphs
--- ----------------------------
-INSERT INTO `character_glyphs` VALUES ('1', '0', '0', '0', '0', '0', '0', '0');
-
--- ----------------------------
 -- Table structure for `character_homebind`
 -- ----------------------------
 DROP TABLE IF EXISTS `character_homebind`;
@@ -839,11 +655,6 @@ CREATE TABLE `character_homebind` (
   `posZ` float NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Player System';
-
--- ----------------------------
--- Records of character_homebind
--- ----------------------------
-INSERT INTO `character_homebind` VALUES ('1', '0', '5148', '-8866.29', '670.573', '97.9033');
 
 -- ----------------------------
 -- Table structure for `character_instance`
@@ -874,29 +685,6 @@ CREATE TABLE `character_inventory` (
   UNIQUE KEY `guid` (`guid`,`bag`,`slot`),
   KEY `idx_guid` (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Player System';
-
--- ----------------------------
--- Records of character_inventory
--- ----------------------------
-INSERT INTO `character_inventory` VALUES ('1', '0', '4', '31');
-INSERT INTO `character_inventory` VALUES ('1', '0', '5', '15');
-INSERT INTO `character_inventory` VALUES ('1', '0', '6', '35');
-INSERT INTO `character_inventory` VALUES ('1', '0', '8', '38');
-INSERT INTO `character_inventory` VALUES ('1', '0', '9', '16');
-INSERT INTO `character_inventory` VALUES ('1', '0', '14', '29');
-INSERT INTO `character_inventory` VALUES ('1', '0', '15', '13');
-INSERT INTO `character_inventory` VALUES ('1', '0', '19', '30');
-INSERT INTO `character_inventory` VALUES ('1', '0', '23', '8');
-INSERT INTO `character_inventory` VALUES ('1', '0', '24', '10');
-INSERT INTO `character_inventory` VALUES ('1', '0', '25', '2');
-INSERT INTO `character_inventory` VALUES ('1', '0', '26', '18');
-INSERT INTO `character_inventory` VALUES ('1', '0', '27', '32');
-INSERT INTO `character_inventory` VALUES ('1', '0', '28', '33');
-INSERT INTO `character_inventory` VALUES ('1', '0', '29', '4');
-INSERT INTO `character_inventory` VALUES ('1', '0', '30', '36');
-INSERT INTO `character_inventory` VALUES ('1', '0', '31', '14');
-INSERT INTO `character_inventory` VALUES ('1', '0', '32', '39');
-INSERT INTO `character_inventory` VALUES ('1', '0', '33', '40');
 
 -- ----------------------------
 -- Table structure for `character_pet`
@@ -1016,29 +804,6 @@ CREATE TABLE `character_queststatus_rewarded` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Player System';
 
 -- ----------------------------
--- Records of character_queststatus_rewarded
--- ----------------------------
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '2158');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29406');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29408');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29409');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29410');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29414');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29417');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29418');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29419');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29420');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29421');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29422');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29424');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29522');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29523');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29524');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '29664');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '30038');
-INSERT INTO `character_queststatus_rewarded` VALUES ('1', '30045');
-
--- ----------------------------
 -- Table structure for `character_queststatus_seasonal`
 -- ----------------------------
 DROP TABLE IF EXISTS `character_queststatus_seasonal`;
@@ -1082,165 +847,6 @@ CREATE TABLE `character_reputation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Player System';
 
 -- ----------------------------
--- Records of character_reputation
--- ----------------------------
-INSERT INTO `character_reputation` VALUES ('1', '21', '0', '64');
-INSERT INTO `character_reputation` VALUES ('1', '46', '0', '4');
-INSERT INTO `character_reputation` VALUES ('1', '47', '-2844', '17');
-INSERT INTO `character_reputation` VALUES ('1', '54', '-2844', '17');
-INSERT INTO `character_reputation` VALUES ('1', '59', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '67', '0', '14');
-INSERT INTO `character_reputation` VALUES ('1', '68', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '69', '-2844', '17');
-INSERT INTO `character_reputation` VALUES ('1', '70', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '72', '-2825', '17');
-INSERT INTO `character_reputation` VALUES ('1', '76', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '81', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '83', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '86', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '87', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '92', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '93', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '169', '0', '12');
-INSERT INTO `character_reputation` VALUES ('1', '270', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '289', '0', '4');
-INSERT INTO `character_reputation` VALUES ('1', '349', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '369', '0', '64');
-INSERT INTO `character_reputation` VALUES ('1', '469', '0', '25');
-INSERT INTO `character_reputation` VALUES ('1', '470', '0', '64');
-INSERT INTO `character_reputation` VALUES ('1', '471', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '509', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '510', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '529', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '530', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '549', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '550', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '551', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '569', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '570', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '571', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '574', '0', '4');
-INSERT INTO `character_reputation` VALUES ('1', '576', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '577', '0', '64');
-INSERT INTO `character_reputation` VALUES ('1', '589', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '609', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '729', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '730', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '749', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '809', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '889', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '890', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '891', '0', '24');
-INSERT INTO `character_reputation` VALUES ('1', '892', '0', '14');
-INSERT INTO `character_reputation` VALUES ('1', '909', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '910', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '911', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '922', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '930', '-2744', '17');
-INSERT INTO `character_reputation` VALUES ('1', '932', '0', '80');
-INSERT INTO `character_reputation` VALUES ('1', '933', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '934', '0', '80');
-INSERT INTO `character_reputation` VALUES ('1', '935', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '936', '0', '28');
-INSERT INTO `character_reputation` VALUES ('1', '941', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '942', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '946', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '947', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '948', '0', '8');
-INSERT INTO `character_reputation` VALUES ('1', '949', '0', '24');
-INSERT INTO `character_reputation` VALUES ('1', '952', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '953', '0', '4');
-INSERT INTO `character_reputation` VALUES ('1', '967', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '970', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '978', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '980', '0', '24');
-INSERT INTO `character_reputation` VALUES ('1', '989', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '990', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1005', '0', '20');
-INSERT INTO `character_reputation` VALUES ('1', '1011', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1012', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1015', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '1031', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1037', '0', '136');
-INSERT INTO `character_reputation` VALUES ('1', '1038', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1050', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1052', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '1064', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '1067', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '1068', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1073', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1077', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1082', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '1085', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '1090', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1091', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1094', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1097', '0', '12');
-INSERT INTO `character_reputation` VALUES ('1', '1098', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1104', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1105', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1106', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1117', '0', '12');
-INSERT INTO `character_reputation` VALUES ('1', '1118', '0', '12');
-INSERT INTO `character_reputation` VALUES ('1', '1119', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '1124', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '1126', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1133', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '1134', '256', '17');
-INSERT INTO `character_reputation` VALUES ('1', '1135', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1136', '0', '4');
-INSERT INTO `character_reputation` VALUES ('1', '1137', '0', '4');
-INSERT INTO `character_reputation` VALUES ('1', '1138', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '1154', '0', '4');
-INSERT INTO `character_reputation` VALUES ('1', '1155', '0', '4');
-INSERT INTO `character_reputation` VALUES ('1', '1156', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1158', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1162', '0', '8');
-INSERT INTO `character_reputation` VALUES ('1', '1163', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '1168', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1169', '0', '28');
-INSERT INTO `character_reputation` VALUES ('1', '1171', '0', '66');
-INSERT INTO `character_reputation` VALUES ('1', '1172', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '1173', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1174', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1177', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '1178', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '1204', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1216', '3510', '81');
-INSERT INTO `character_reputation` VALUES ('1', '1228', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '1242', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1245', '0', '8');
-INSERT INTO `character_reputation` VALUES ('1', '1269', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1270', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1271', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1272', '0', '152');
-INSERT INTO `character_reputation` VALUES ('1', '1273', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1275', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1276', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1277', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1278', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1279', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1280', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1281', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1282', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1283', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1302', '0', '144');
-INSERT INTO `character_reputation` VALUES ('1', '1337', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1341', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1345', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1351', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '1352', '0', '6');
-INSERT INTO `character_reputation` VALUES ('1', '1353', '-2100', '17');
-INSERT INTO `character_reputation` VALUES ('1', '1357', '0', '4');
-INSERT INTO `character_reputation` VALUES ('1', '1358', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1359', '0', '16');
-INSERT INTO `character_reputation` VALUES ('1', '1374', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '1375', '0', '2');
-INSERT INTO `character_reputation` VALUES ('1', '1376', '0', '144');
-INSERT INTO `character_reputation` VALUES ('1', '1416', '0', '0');
-INSERT INTO `character_reputation` VALUES ('1', '1419', '0', '16');
-
--- ----------------------------
 -- Table structure for `character_skills`
 -- ----------------------------
 DROP TABLE IF EXISTS `character_skills`;
@@ -1251,35 +857,6 @@ CREATE TABLE `character_skills` (
   `max` smallint(5) unsigned NOT NULL,
   PRIMARY KEY (`guid`,`skill`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Player System';
-
--- ----------------------------
--- Records of character_skills
--- ----------------------------
-INSERT INTO `character_skills` VALUES ('1', '43', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '44', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '45', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '46', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '54', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '55', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '95', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '98', '300', '300');
-INSERT INTO `character_skills` VALUES ('1', '118', '1', '180');
-INSERT INTO `character_skills` VALUES ('1', '136', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '160', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '162', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '172', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '173', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '226', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '229', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '413', '1', '1');
-INSERT INTO `character_skills` VALUES ('1', '415', '1', '1');
-INSERT INTO `character_skills` VALUES ('1', '433', '1', '1');
-INSERT INTO `character_skills` VALUES ('1', '473', '1', '5');
-INSERT INTO `character_skills` VALUES ('1', '795', '1', '1');
-INSERT INTO `character_skills` VALUES ('1', '840', '1', '1');
-INSERT INTO `character_skills` VALUES ('1', '905', '300', '300');
-INSERT INTO `character_skills` VALUES ('1', '906', '300', '300');
-INSERT INTO `character_skills` VALUES ('1', '924', '1', '1');
 
 -- ----------------------------
 -- Table structure for `character_social`
@@ -1309,34 +886,6 @@ CREATE TABLE `character_spell` (
   `disabled` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`spell`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Player System';
-
--- ----------------------------
--- Records of character_spell
--- ----------------------------
-INSERT INTO `character_spell` VALUES ('1', '71', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '100', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '355', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '668', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '676', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '1680', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '1715', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '2458', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '5308', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '6343', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '6552', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '7386', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '13046', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '23588', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '23881', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '29838', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '34428', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '57755', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '85288', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '100130', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '103827', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '108130', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '115767', '1', '0');
-INSERT INTO `character_spell` VALUES ('1', '115768', '1', '0');
 
 -- ----------------------------
 -- Table structure for `character_spell_cooldown`
@@ -1405,12 +954,6 @@ CREATE TABLE `character_talent` (
   `spec` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`spell`,`spec`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of character_talent
--- ----------------------------
-INSERT INTO `character_talent` VALUES ('1', '15757', '0');
-INSERT INTO `character_talent` VALUES ('1', '16035', '0');
 
 -- ----------------------------
 -- Table structure for `character_void_storage`
@@ -1497,15 +1040,6 @@ CREATE TABLE `creature_respawn` (
   PRIMARY KEY (`guid`,`instanceId`),
   KEY `idx_instance` (`instanceId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Grid Loading System';
-
--- ----------------------------
--- Records of creature_respawn
--- ----------------------------
-INSERT INTO `creature_respawn` VALUES ('178455', '1389863191', '0', '0');
-INSERT INTO `creature_respawn` VALUES ('604478', '1389862131', '860', '0');
-INSERT INTO `creature_respawn` VALUES ('8156131', '1389862302', '860', '0');
-INSERT INTO `creature_respawn` VALUES ('8162617', '1489862551', '860', '0');
-INSERT INTO `creature_respawn` VALUES ('15152672', '1389861498', '860', '0');
 
 -- ----------------------------
 -- Table structure for `gameobject_respawn`
@@ -1992,138 +1526,6 @@ CREATE TABLE `instance_reset` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of instance_reset
--- ----------------------------
-INSERT INTO `instance_reset` VALUES ('33', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('36', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('249', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('249', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('269', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('409', '9', '1390449600');
-INSERT INTO `instance_reset` VALUES ('469', '9', '1390449600');
-INSERT INTO `instance_reset` VALUES ('509', '3', '1390104000');
-INSERT INTO `instance_reset` VALUES ('531', '9', '1390449600');
-INSERT INTO `instance_reset` VALUES ('532', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('533', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('533', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('534', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('540', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('542', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('543', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('544', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('545', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('546', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('547', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('548', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('550', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('552', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('553', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('554', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('555', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('556', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('557', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('558', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('560', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('564', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('565', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('568', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('574', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('575', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('576', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('578', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('580', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('585', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('595', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('598', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('599', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('600', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('601', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('602', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('603', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('603', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('604', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('608', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('615', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('615', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('616', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('616', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('619', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('624', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('624', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('631', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('631', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('631', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('631', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('632', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('643', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('644', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('645', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('649', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('649', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('649', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('649', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('650', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('657', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('658', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('668', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('669', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('669', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('669', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('669', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('670', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('671', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('671', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('671', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('671', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('720', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('720', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('720', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('720', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('724', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('724', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('724', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('724', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('725', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('754', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('754', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('754', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('754', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('755', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('757', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('757', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('757', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('757', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('859', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('938', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('939', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('940', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('959', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('960', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('961', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('962', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('967', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('967', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('967', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('967', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('994', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('996', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('996', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('996', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('996', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('1001', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('1004', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('1007', '2', '1389931200');
-INSERT INTO `instance_reset` VALUES ('1008', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('1008', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('1008', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('1008', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('1009', '3', '1390449600');
-INSERT INTO `instance_reset` VALUES ('1009', '4', '1390449600');
-INSERT INTO `instance_reset` VALUES ('1009', '5', '1390449600');
-INSERT INTO `instance_reset` VALUES ('1009', '6', '1390449600');
-INSERT INTO `instance_reset` VALUES ('1011', '2', '1389931200');
-
--- ----------------------------
 -- Table structure for `item_instance`
 -- ----------------------------
 DROP TABLE IF EXISTS `item_instance`;
@@ -2145,29 +1547,6 @@ CREATE TABLE `item_instance` (
   PRIMARY KEY (`guid`),
   KEY `idx_owner_guid` (`owner_guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Item System';
-
--- ----------------------------
--- Records of item_instance
--- ----------------------------
-INSERT INTO `item_instance` VALUES ('2', '72019', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55 55 0 0 ', '0', '55', '0', '');
-INSERT INTO `item_instance` VALUES ('4', '72020', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39 40 0 0 ', '0', '39', '0', '');
-INSERT INTO `item_instance` VALUES ('8', '77273', '1', '0', '0', '6', '0', '0 0 0 0 0 ', '0', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0', '0', '0', '');
-INSERT INTO `item_instance` VALUES ('10', '6948', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0', '0', '0', '');
-INSERT INTO `item_instance` VALUES ('13', '73210', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40 40 0 0 ', '0', '40', '0', '');
-INSERT INTO `item_instance` VALUES ('14', '73216', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 20 0 0 ', '0', '20', '0', '');
-INSERT INTO `item_instance` VALUES ('15', '73219', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 20 0 0 ', '0', '20', '0', '');
-INSERT INTO `item_instance` VALUES ('16', '73222', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 20 0 0 ', '0', '20', '0', '');
-INSERT INTO `item_instance` VALUES ('18', '55973', '1', '0', '0', '6', '0', '0 0 0 0 0 ', '0', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0', '0', '0', '');
-INSERT INTO `item_instance` VALUES ('29', '73223', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0', '0', '0', '');
-INSERT INTO `item_instance` VALUES ('30', '73241', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0', '0', '0', '');
-INSERT INTO `item_instance` VALUES ('31', '73226', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60 60 0 0 ', '0', '60', '0', '');
-INSERT INTO `item_instance` VALUES ('32', '55983', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '0', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0', '0', '0', '');
-INSERT INTO `item_instance` VALUES ('33', '72071', '1', '0', '0', '2', '0', '0 0 0 0 0 ', '0', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0', '0', '0', '');
-INSERT INTO `item_instance` VALUES ('35', '73229', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45 45 0 0 ', '0', '45', '0', '');
-INSERT INTO `item_instance` VALUES ('36', '73242', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0', '0', '0', '');
-INSERT INTO `item_instance` VALUES ('38', '57397', '1', '0', '0', '1', '0', '0 0 0 0 0 ', '1', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 20 0 0 ', '0', '20', '0', '');
-INSERT INTO `item_instance` VALUES ('39', '4656', '1', '0', '0', '5', '0', '-1 0 0 0 0 ', '0', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0', '0', '0', '');
-INSERT INTO `item_instance` VALUES ('40', '159', '1', '0', '0', '5', '0', '-1 0 0 0 0 ', '0', '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ', '0', '0', '0', '');
 
 -- ----------------------------
 -- Table structure for `item_loot_items`
@@ -2414,47 +1793,6 @@ CREATE TABLE `pool_quest_save` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of pool_quest_save
--- ----------------------------
-INSERT INTO `pool_quest_save` VALUES ('500', '13675');
-INSERT INTO `pool_quest_save` VALUES ('501', '13764');
-INSERT INTO `pool_quest_save` VALUES ('502', '13769');
-INSERT INTO `pool_quest_save` VALUES ('503', '13773');
-INSERT INTO `pool_quest_save` VALUES ('504', '13778');
-INSERT INTO `pool_quest_save` VALUES ('505', '13784');
-INSERT INTO `pool_quest_save` VALUES ('506', '13670');
-INSERT INTO `pool_quest_save` VALUES ('507', '13600');
-INSERT INTO `pool_quest_save` VALUES ('508', '13741');
-INSERT INTO `pool_quest_save` VALUES ('509', '13746');
-INSERT INTO `pool_quest_save` VALUES ('510', '13757');
-INSERT INTO `pool_quest_save` VALUES ('511', '13754');
-INSERT INTO `pool_quest_save` VALUES ('512', '13103');
-INSERT INTO `pool_quest_save` VALUES ('513', '13115');
-INSERT INTO `pool_quest_save` VALUES ('514', '13830');
-INSERT INTO `pool_quest_save` VALUES ('515', '12963');
-INSERT INTO `pool_quest_save` VALUES ('516', '24582');
-INSERT INTO `pool_quest_save` VALUES ('523', '26226');
-INSERT INTO `pool_quest_save` VALUES ('524', '26192');
-INSERT INTO `pool_quest_save` VALUES ('525', '25162');
-INSERT INTO `pool_quest_save` VALUES ('526', '25154');
-INSERT INTO `pool_quest_save` VALUES ('527', '26588');
-INSERT INTO `pool_quest_save` VALUES ('528', '26414');
-INSERT INTO `pool_quest_save` VALUES ('529', '29332');
-INSERT INTO `pool_quest_save` VALUES ('530', '29363');
-INSERT INTO `pool_quest_save` VALUES ('531', '29352');
-INSERT INTO `pool_quest_save` VALUES ('532', '29318');
-INSERT INTO `pool_quest_save` VALUES ('533', '29317');
-INSERT INTO `pool_quest_save` VALUES ('534', '29348');
-INSERT INTO `pool_quest_save` VALUES ('535', '29347');
-INSERT INTO `pool_quest_save` VALUES ('536', '29321');
-INSERT INTO `pool_quest_save` VALUES ('14520', '30150');
-INSERT INTO `pool_quest_save` VALUES ('14521', '30155');
-INSERT INTO `pool_quest_save` VALUES ('14522', '30157');
-INSERT INTO `pool_quest_save` VALUES ('14524', '31699');
-INSERT INTO `pool_quest_save` VALUES ('14525', '31702');
-INSERT INTO `pool_quest_save` VALUES ('14526', '31721');
-
--- ----------------------------
 -- Table structure for `reserved_name`
 -- ----------------------------
 DROP TABLE IF EXISTS `reserved_name`;
@@ -2492,15 +1830,3 @@ CREATE TABLE `worldstates` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Variable Saves';
 
--- ----------------------------
--- Records of worldstates
--- ----------------------------
-INSERT INTO `worldstates` VALUES ('3781', '9000000', null);
-INSERT INTO `worldstates` VALUES ('3801', '0', null);
-INSERT INTO `worldstates` VALUES ('3802', '1', null);
-INSERT INTO `worldstates` VALUES ('20001', '1390453200', null);
-INSERT INTO `worldstates` VALUES ('20002', '1390465527', null);
-INSERT INTO `worldstates` VALUES ('20003', '1389934800', null);
-INSERT INTO `worldstates` VALUES ('20006', '1389934800', null);
-INSERT INTO `worldstates` VALUES ('20007', '1391209200', null);
-INSERT INTO `worldstates` VALUES ('20050', '1', null);
