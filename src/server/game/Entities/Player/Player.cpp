@@ -27288,7 +27288,7 @@ void Player::ReportSpeedHack(float vitesse)
 
     if(m_speedHackNbPositif > 5)
     {
-        if(m_speedHackTimer > 5000)
+        if(m_speedHackTimer > 50000000)
         {
             float pourcent = vitesse / GetSpeed(MOVE_RUN) * 100;
             std::stringstream ss;
@@ -27306,7 +27306,7 @@ void Player::ReportFlyHack()
 
     if(m_flyHackNbPositif > 5)
     {
-        if(m_flyHackTimer > 5000)
+        if(m_flyHackTimer > 50000000)
         {
             std::stringstream ss;
             ss<< "[Anti-hack] Fly hack pour " << GetName();
@@ -27322,7 +27322,7 @@ void Player::ReportWWHack()
 
     if(m_wwHackNbPositif > 5)
     {
-        if(m_wwHackTimer > 5000)
+        if(m_wwHackTimer > 50000000)
         {
             std::stringstream ss;
             ss << "[Anti-hack] Water walk hack pour " << GetName();
